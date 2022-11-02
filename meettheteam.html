@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Meet The Team</title>
+          <style>
+                     * {
+                              box-sizing: border-box;
+                    }
+
+                    body {
+                              margin: 0;
+                              background-color: thistle;
+                    }
+
+                     h1.next {
+                              text-align: center;
+                              word-spacing: 7px;
+                              letter-spacing: 10px;
+                              font-weight: lighter;
+                    }
+
+                    .border-top {
+                              border: none;
+                              border-top: 2px solid rgb(115, 39, 136);
+                              margin: 1% 40% 0%;
+                    }
+
+                    div.cards {
+                              position: relative;
+                              float: left;
+                              width: 25%;
+                              box-shadow:  12px 14px 8px rgb(70, 67, 67), 10px 14px 8px slategray;
+                              text-align: center;
+                              margin-left: 5%;
+                              margin-top: 70px;
+                              /* transition: transform 2s; */
+                    }
+
+                    div.cards::after {
+                              content: "";
+                              display: table;
+                              clear: both;
+                    }
+
+                    .overlay {
+                              position: absolute;
+                              top: 0;
+                              bottom: 0;
+                              left: 0;
+                              right: 0;
+                              width: 100%;
+                              height: 100%;
+                              opacity: 0;
+                              background:rgb(115, 39, 136);
+                              transition: .5s ease;
+                    }
+
+                    div.cards:hover .overlay {
+                              /* box-shadow: 12px 14px 55px rgb(34, 33, 33); */
+                              /* transform: rotateY(180deg); */
+                              opacity: 1;
+                    }
+
+                    .display {
+                              position: absolute;
+                              padding: 20px 12px 0px 12px;
+                              text-indent: 15px;
+                              color: white;
+                              font-size: 1.2vw; /*vw makes the font size to shrink on reduced viewport  avoid overflow*/
+                              text-shadow: 8px 10px 8px black;
+                    }
+
+                    div.top {
+                              background-color: rgb(115, 39, 136);
+                    }
+
+                    div.bottom {
+                              padding: 0.1em;
+                              background-color: rgb(115, 39, 136);
+                              color: white;
+                              letter-spacing: 4px;
+                              font-variant: small-caps;
+                    }
+
+          </style>
+</head>
+<body>
+          <h1 class="next"> Meet The Team</h1>
+          <div class="border-top"></div>
+
+<div class="cards">
+          <div class="top">
+                    <img src="assets/images/team1.jpg" alt="team 1" width="100%" height="auto">
+          </div>
+                    <div class="bottom">
+                              <p> Jane Doe </p>
+                    </div>
+                              <div class="para">
+                                        <p>  HR Manager</p>
+                              </div>
+                              <div class="overlay"> 
+                                        <div class="display"> Jane Doe <hr><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis eos quasi sapiente cum dicta minima reprehenderit quis ipsum soluta earum nobis voluptas suscipit numquam maxime laudantium, atque quo animi quibusdam.<br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto animi iste necessitatibus quae nihil saepe, amet aut porro excepturi suscipit consequuntur rerum distinctio eligendi, ab, cumque tenetur. Unde, sapiente quaerat.</div>
+                              </div>
+</div>
+
+<div class="cards">
+          <div class="top">
+                    <img src="assets/images/team3.jpg" alt="team 2" width="100%" height="auto">
+          </div>
+                    <div class="bottom">
+                              <p> Jack Robinson </p>
+                    </div>
+                              <div class="para">
+                                         <p>  CEO</p>
+                              </div>
+                              <div class="overlay"> 
+                                        <div class="display"> Jack Robinson <hr><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis eos quasi sapiente cum dicta minima reprehenderit quis ipsum soluta earum nobis voluptas suscipit numquam maxime laudantium, atque quo animi quibusdam.<br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto animi iste necessitatibus quae nihil saepe, amet aut porro excepturi suscipit consequuntur rerum distinctio eligendi, ab, cumque tenetur. Unde, sapiente quaerat.</div>
+                              </div>
+</div>
+
+<div class="cards">
+          <div class="top">
+                    <img src="assets/images/man_hat.jpg" alt="team 3" width="100%" height="100%">
+          </div>
+                    <div class="bottom">
+                              <p> Mac Joe </p>
+                    </div>
+                              <div class="para">
+                                        <p>  Programs Manager</p>
+                              </div>
+                              <div class="overlay"> 
+                                        <div class="display"> Mac Joe <hr><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis eos quasi sapiente cum dicta minima reprehenderit quis ipsum soluta earum nobis voluptas suscipit numquam maxime laudantium, atque quo animi quibusdam.<br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto animi iste necessitatibus quae nihil saepe, amet aut porro excepturi suscipit consequuntur rerum distinctio eligendi, ab, cumque tenetur. Unde, sapiente quaerat.</div>
+                              </div>
+</div>
+
+</body>
+</html>

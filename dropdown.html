@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Dropdown</title>
+</head>
+<style>
+
+          body {
+                    margin: 0;
+                    background-color: oldlace;
+          }
+
+          ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: teal;
+          }
+
+          li {
+                    float: left;
+          }
+
+          li a, .dropdown-btn {
+                    display: inline-block;
+                    text-decoration: none;
+                    text-align: center;
+                    color: white;
+                    padding: 16px 18px;
+          }
+
+          li a:focus, .dropdown-btn:focus {
+                    background-color: #7f0000a2;
+          }
+
+          li a:hover, .dropdown:hover .dropdown-btn {
+                    background-color: oldlace;
+                    color: teal;
+          }
+
+         li .dropdown {
+                    display: inline-block;
+          }
+
+          .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: wheat;
+                    min-width: 160px;
+          }
+
+          .dropdown-content a {
+                    display: block;
+                    padding: 16px 18px;
+                    text-decoration: none;
+                    color: black;
+                    text-align: left;
+          }
+
+          .dropdown-content a:hover {
+                    background-color: lightgray;
+          }
+
+          .dropdown:hover .dropdown-content {
+                    display: block;
+          }
+
+</style>
+<body>
+          <ul>
+                    <li><a href="#"> Home</a></li>
+                    <li><a href="#"> News</a></li>
+                    <li><a href="#"> Contact</a></li>
+                    <li class="dropdown">
+                              <a href="#" class="dropdown-btn"> Dropdown</a>
+                              <div class="dropdown-content">
+                                        <a href="#"> Link 1</a>
+                                        <a href="#"> Link 2</a>
+                                        <a href="#"> Link 3</a>
+                              </div>
+                    </li>
+          </ul>
+          
+</body>
+</html> 
